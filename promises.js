@@ -38,29 +38,29 @@
 // .catch(e=>console.log(e))
 
 
-const userDetails = new Promise((resolve, reject)=>{
+// const userDetails = new Promise((resolve, reject)=>{
     
-    setTimeout(()=>{
-        resolve({
-            name:'Sachin',
-            favoritePlaces:['222' ,'219','4']
-        })
-    },2000)
+//     setTimeout(()=>{
+//         resolve({
+//             name:'Sachin',
+//             favoritePlaces:['222' ,'219','4']
+//         })
+//     },2000)
     
-})
-const userSettings = new Promise((resolve, reject)=>{
+// })
+// const userSettings = new Promise((resolve, reject)=>{
     
-    setTimeout(()=>{
-        resolve({
-            name:'Sachin',
-            settings:{
-                isProfilePublic:false,
-                isFriendListHidden:true
-            }
-        })
-    },4000)
+//     setTimeout(()=>{
+//         resolve({
+//             name:'Sachin',
+//             settings:{
+//                 isProfilePublic:false,
+//                 isFriendListHidden:true
+//             }
+//         })
+//     },4000)
     
-})
+// })
 
 // How can you invoke both promises at the same time 
 // How to invoke Promises that if atleast one of them is settled , you get result bacl 
