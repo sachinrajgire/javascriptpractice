@@ -31,6 +31,7 @@
 // })
 // .catch(i=>console.log(i))
 // ********************************************************************
+//  Question NO 4
 // Write a function p1 which will give this desired outcome 
 // p1(20)
 // .then(r1=>p2(r1))  /////-->Always remember to return p2(r1) . this syntax is shortcut for return p2(r1)
@@ -65,3 +66,8 @@
 // How can you invoke both promises at the same time 
 // How to invoke Promises that if atleast one of them is settled , you get result bacl 
 // How can you invoke all promisees at once , make sure you get result back if one of them is rejected
+
+
+//Async Await 
+// Refactor Question number 4 using async/await sync
+// Make sure you handle errors 
