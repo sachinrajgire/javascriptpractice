@@ -15,3 +15,29 @@ function compareT () {
 module.exports={
     compareT
 }
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
+function modifyArray(arr, cb) {
+    // do something to arr here
+    arr.push(100);
+    // then execute the callback function that was passed
+    cb();
+  }
+  
+//How do I get Call this function and get the output 
+
+
+
+
+///////////////////////////////////////////////////////////////////
+// Given this array , Provide few ways you can empty the array 
+let a= [1,4,8]
+
+
