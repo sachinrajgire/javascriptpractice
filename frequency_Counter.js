@@ -41,3 +41,27 @@ function modifyArray(arr, cb) {
 let a= [1,4,8]
 
 
+
+///////////////////////////////////////////////////////////////////
+// Multicate 
+//1st arg is array and second inter from 1 to 50. Number of items in array ( first arguyment )
+// should duplicate if 2 is passed as second argyment , tripilicate if 3 is passed as second argyment
+
+
+function multicate () {
+
+
+}
+
+
+
+///////////////////////////////////////////////////////////////////
+// console.log(mul(2)(3)(4))
+// Write a function to make this work 
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
