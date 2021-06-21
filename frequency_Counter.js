@@ -65,3 +65,67 @@ function multicate () {
 
 ///////////////////////////////////////////////////////////////////
 
+function counter() {
+    var _counter = 0;
+    // return an object with several functions that allow you
+    // to modify the private _counter variable
+    return {
+      add: function(increment) { _counter += increment; },
+      retrieve: function() { return 'The counter is currently at: ' + _counter; }
+    }
+  }
+//   What is the expected output of _counter 
+  console.log(_counter,'counter');
+  var c = counter();
+  c.add(5);  
+  c.add(9); 
+  
+  c.retrieve(); // //   What is the expected output of _counter 
+
+  ///////////////////////////////////////////////////////////////////
+
+  function foo() {
+	console.log( this.bar );
+}
+
+var bar = "global";
+
+var obj1 = {
+	bar: "obj1",
+	foo: foo
+};
+
+var obj2 = {
+	bar: "obj2"
+};
+
+foo();		 	
+obj1.foo();	    
+foo.call( obj2 );  
+new foo();	     
+
+
+
+  ///////////////////////////////////////////////////////////////////
+// Currently priv is not available outside function func, Modify func to make console.log work 
+
+  function func() {
+    var priv = "secret code";
+    
+  }
+  
+
+  var getPriv = func();
+  console.log(getPriv()); // => secret code should appear 
+
+
+///////////////////////////////////////////////////////////////////
+https://www.hackerrank.com/work/library/hackerrank?question=801684&skill_ids=2b899851360d&view=question&copyscrape=true
+
+
+
+
+
+
+
+  ///////////////////////////////////////////////////////////////////
