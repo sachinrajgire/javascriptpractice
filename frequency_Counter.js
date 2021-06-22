@@ -213,9 +213,13 @@ console.log(compareT(a1,a2) ,'RETURNED VALUE ' )
 // Binary Search - Given the sorted array ( first argument), Find the element using binary search
 // Return -1 when nothing is found .
 
-function a(x,y){
+// function a(x,y){
  
  
-   }
- console.log(a([1,2,3,5,6,8,10,15,25,30],11))
- 
+//    }
+//  console.log(a([1,2,3,5,6,8,10,15,25,30],11))
+
+
+///////////////////////////////////////////////////////////////////
+
+//  Populate Alphabets A to Z in array 
