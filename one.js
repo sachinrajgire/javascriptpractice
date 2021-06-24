@@ -9,15 +9,50 @@ let  obj1 ={
     }
 }
 
-let  obj2 ={...obj1}
+let str = "hello hwlo"
+str= str + 'hellow'
 
-// console.log(obj2 === obj1)
+let newstr = str  //pass by value 
+
+
+obj1.address='167 winthrop '
+
+console.log(obj1,'obj1');
+
+// let  obj2 ={...obj1}  
+
+// shallow and deep 
 
 // ********************************************************************
 
+function* gen() {
+
+    for(i=0;i<10<i++){
+        yield 
+        console.log(i);
+    }
+
+} 
+WATCHERS -
+()
+
+ACTIONS- YIELD
+
+
+
+// ********
+// const obj2 ={
+//     ...obj1,
+//     education: {
+//         ...obj1.education,
+//         masters: {
+//            ...obj1.education.masters
+//         }
+//     }
+// }
+
 // obj1.education.masters.major="Computer Science"
 // console.log(obj2.education.masters.major)
-
 // ********************************************************************
 
 // obj2.name ='Sachin Renamed'
