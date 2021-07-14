@@ -1,23 +1,23 @@
 
-let  obj1 ={
-    name:'Sachin',
-    education :{
-        masters:{
-            major:"Telecom",
-            minor:"Management"
-        }
-    }
-}
+// let  obj1 ={
+//     name:'Sachin',
+//     education :{
+//         masters:{
+//             major:"Telecom",
+//             minor:"Management"
+//         }
+//     }
+// }
 
-let str = "hello hwlo"
-str= str + 'hellow'
+// let str = "hello hwlo"
+// str= str + 'hellow'
 
-let newstr = str  //pass by value 
+// let newstr = str  //pass by value 
 
 
-obj1.address='167 winthrop '
+// obj1.address='167 winthrop '
 
-console.log(obj1,'obj1');
+// console.log(obj1,'obj1');
 
 // let  obj2 ={...obj1}  
 
@@ -25,18 +25,18 @@ console.log(obj1,'obj1');
 
 // ********************************************************************
 
-function* gen() {
+// function* gen() {
 
-    for(i=0;i<10<i++){
-        yield 
-        console.log(i);
-    }
+//     for(i=0;i<10<i++){
+//         yield 
+//         console.log(i);
+//     }
 
-} 
-WATCHERS -
-()
+// } 
+// WATCHERS -
+// ()
 
-ACTIONS- YIELD
+// ACTIONS- YIELD
 
 
 
@@ -82,29 +82,38 @@ ACTIONS- YIELD
 
 // Write a program to compare to compare two objects to determine if they have exactly same properties and value 
 
-// let  obj11 ={
-//     name:'Sachin',
-//     gav:'gav',
-//     education :{
-//         masters:{
-//             major:"Telecom",
-//             minor:"Management",
+let  obj11 ={
+    name:'Sachin',
+    gav:'gav',
+    education :{
+        masters:{
+            major:"Telecom",
+            minor:"Management",
             
-//         }
-//     }
-// }
-// let  obj12 ={
-//     name:'Sachin',
-//     city:'reston',
-//     education :{
-//         masters:{
-//             major:"Telecom",
-//             minor:"Management",
-            
-//         }
-//     }
-// }
+        }
+    }
+}
+function reCopy(obj) {
+    let copy= {}
+
+for (let key in obj) {
+    let v = obj[key]
+    if (typeof v === "object") {
+        copy[key] = reCopy(v);
+      } else {
+        copy[key] = v;
+      }
+
+}
+// console.log(copy);
+return copy 
+    
+
+}
+console.log(reCopy(obj1q),'console')
+
+// Architectal Pattern
 
 
 
-// console.log(compareObj(obj11,obj12))
+
