@@ -1,3 +1,5 @@
+'use strict'
+
 // Circular Printer 
 // https://drive.google.com/file/d/1AF1i0PRcA74QCBoarrzL4LyQKNz7t2-4/view?usp=sharing
 
@@ -57,3 +59,13 @@ const may24 = new Bootcamp(10,20,"react",10)
 
 console.log(may24,'may24');
 console.log(may24.duration(),'duration');
+let a =3 ;
+
+// string 
+// Number
+// Symbol
+// Object
+// undefined
+
+// Boolean
+// null

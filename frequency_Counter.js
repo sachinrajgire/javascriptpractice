@@ -1,11 +1,15 @@
 // Frequency Counter Pattern uses objects to collect information , This way you don't have to run 2 loops 
 
-
+// PROBLEM 1
 // let a1= [2,4,10,4]
 // let a2= [4,10,4,2]
 
 // // Write a function to check if all the items in a1 are present in a2 , if yes return true else false 
-
+a1temp = {
+  "4":2,
+  "2":1,
+  "10":1
+}
 function compareT(a1,a2) {
 let ret = true 
     if(a1.length !== a2.length) {
@@ -339,3 +343,4 @@ module.exports ={
 // const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 97));
 
 // console.log(caps,'caps');
+

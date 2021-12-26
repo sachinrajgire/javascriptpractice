@@ -1,25 +1,20 @@
+'use strict'
+let  obj1 ={
+    name:'Sachin',
+    education :{
+        masters:{
+            major:"Telecom",
+            minor:"Management"
+        }
+    }
+}
 
-// let  obj1 ={
-//     name:'Sachin',
-//     education :{
-//         masters:{
-//             major:"Telecom",
-//             minor:"Management"
-//         }
-//     }
-// }
+let  obj2 ={...obj1} 
+obj2.name="New and Improved Sachin" 
+obj2.education.masters.major="Computer Science" 
 
-// let str = "hello hwlo"
-// str= str + 'hellow'
-
-// let newstr = str  //pass by value 
-
-
-// obj1.address='167 winthrop '
-
-// console.log(obj1,'obj1');
-
-// let  obj2 ={...obj1}  
+console.log(obj1.name);
+console.log(obj1.education.masters.major);
 
 // shallow and deep 
 
@@ -82,35 +77,35 @@
 
 // Write a program to compare to compare two objects to determine if they have exactly same properties and value 
 
-let  obj11 ={
-    name:'Sachin',
-    gav:'gav',
-    education :{
-        masters:{
-            major:"Telecom",
-            minor:"Management",
+// let  obj11 ={
+//     name:'Sachin',
+//     gav:'gav',
+//     education :{
+//         masters:{
+//             major:"Telecom",
+//             minor:"Management",
             
-        }
-    }
-}
-function reCopy(obj) {
-    let copy= {}
+//         }
+//     }
+// }
+// function reCopy(obj) {
+//     let copy= {}
 
-for (let key in obj) {
-    let v = obj[key]
-    if (typeof v === "object") {
-        copy[key] = reCopy(v);
-      } else {
-        copy[key] = v;
-      }
+// for (let key in obj) {
+//     let v = obj[key]
+//     if (typeof v === "object") {
+//         copy[key] = reCopy(v);
+//       } else {
+//         copy[key] = v;
+//       }
 
-}
-// console.log(copy);
-return copy 
+// }
+// // console.log(copy);
+// return copy 
     
 
-}
-console.log(reCopy(obj1q),'console')
+// }
+// console.log(reCopy(obj1q),'console')
 
 // Architectal Pattern
 
