@@ -12,14 +12,23 @@
 // Write a function p1 which will give this desired outcome in 5 seconds 
 // function p1 () {
     
-// function p1 () {
+function p1 (a1) {
     
-//     return new Promise ((resolve,reject)=>{
-//        setTimeout(()=>{
-//         resolve("Promise is a promise")
-//        },5000)
-//     })
-// }
+    return new Promise ((resolve,reject)=>{
+       setTimeout(()=>{
+        resolve(a1*10)
+       },1000)
+    })
+}
+function p2 (a2) {
+    
+    return new Promise ((resolve,reject)=>{
+       setTimeout(()=>{
+        resolve(a2*10)
+       },1000)
+    })
+}
+
 // p1().then(i=>{
 //    console.log(i,'i'); // 'Promise is a promise"
 // })
@@ -53,33 +62,33 @@
 // console.log(invoke().then((res)=>console.log(res)));
 
 // // ********************************************************************
-const userDetails = new Promise((resolve, reject)=>{
+// const userDetails = new Promise((resolve, reject)=>{
     
-    setTimeout(()=>{
-        resolve({
-            name:'Sachin',
-            favoritePlaces:['222' ,'219','4']
-        })
-    },2000)
+//     setTimeout(()=>{
+//         resolve({
+//             name:'Sachin',
+//             favoritePlaces:['222' ,'219','4']
+//         })
+//     },2000)
     
-})
-const userSettings = new Promise((resolve, reject)=>{
+// })
+// const userSettings = new Promise((resolve, reject)=>{
     
-    setTimeout(()=>{
-        resolve({
-            name:'Sachin',
-            settings:{
-                isProfilePublic:false,
-                isFriendListHidden:true
-            }
-        })
-    },5000)
-})
+//     setTimeout(()=>{
+//         resolve({
+//             name:'Sachin',
+//             settings:{
+//                 isProfilePublic:false,
+//                 isFriendListHidden:true
+//             }
+//         })
+//     },5000)
+// })
 // Promise.all()
-// Chain ( Sequential ---> results --- second ---)
-Promise.race([userDetails,userSettings])
-.then ((i)=>console.log(i))
-.catch ((e)=>console.log(e))
+// // Chain ( Sequential ---> results --- second ---)
+// Promise.race([userDetails,userSettings])
+// .then ((i)=>console.log(i))
+// .catch ((e)=>console.log(e))
 
 // How can you invoke both promises at the same time 
 // How to invoke Promises that if atleast one of them is settled , you get result bacl 
@@ -90,8 +99,13 @@ Promise.race([userDetails,userSettings])
 // Refactor Question number 4 using async/await sync
 // Make sure you handle errors 
 
-async function abc () {
+// async function abc () {
 
-let result1= await p1(20)
-let result2= await p2(result1)
-}
+// let result1= await p1(20)
+// let result2= await p2(result1)
+// }
+
+p1(20)
+.then(r1=>p2(r1))  
+.then(p2res=>console.log(p2res)) 
+.catch(e=>console.log(e))

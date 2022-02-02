@@ -39,27 +39,23 @@
 
 // const { socialtoolsEnabled=true } = article || {};
 
+// function Bootcamp(startDate,endDate,title,students) {
+// this.startDate= startDate;
+// this.endDate= endDate;
+// this.title = title;
+// this.students= students;
+
+// this.duration= function() {
+//     return endDate -startDate
+//    }   //Methods 
+// }
 
 
+// const may24 = new Bootcamp(10,20,"react",10)
 
-
-function Bootcamp(startDate,endDate,title,students) {
-this.startDate= startDate;
-this.endDate= endDate;
-this.title = title;
-this.students= students;
-
-this.duration= function() {
-    return endDate -startDate
-   }   //Methods 
-}
-
-
-const may24 = new Bootcamp(10,20,"react",10)
-
-console.log(may24,'may24');
-console.log(may24.duration(),'duration');
-let a =3 ;
+// console.log(may24,'may24');
+// console.log(may24.duration(),'duration');
+// let a =3 ;
 
 // string 
 // Number
@@ -69,3 +65,81 @@ let a =3 ;
 
 // Boolean
 // null
+
+
+
+// Replace all good with best
+
+// let str = "I am going to be the good software engineer out there. So good"
+
+// let splitted = str.split(" ")
+// // console.log(splitted);
+
+// let replaced = splitted.map(i =>{
+//     if(i === "good") {
+//         return "best"
+//     }
+//     return i
+// })
+// // console.log(replaced,'');
+
+// let finalReturn = replaced.join (" ")
+
+// console.log(finalReturn ,'finalReturn');
+
+
+// console.log("sachin is here")
+
+// Using Ternary Operator, Write this program 
+
+
+// runs scored > 100 or more ===> print out "Century"
+
+// More than 50 but less 100 ===> "Half century"
+
+// Do Better < 50
+
+// 0 < runs< 101 Assumption
+
+function running (runs=10) {
+
+    // console.log(runs);
+    // template literal 
+// let totalruns = runs 
+// console.log(totalruns ,'totalruns');
+// return totalruns
+// return runs === 100 && "s" === "s" && console.log(`Input runs are ${runs}`)   //Unreachable Code 
+
+
+}
+console.log(running(100));
+console.log(running(0)); 
+
+// Truthy and falsey values
+// 10, "Sac" 
+
+//  "", 0 ,null ,undefined 
+
+
+Switch Statement 
+Write logic that maps user front end user input into URL 
+
+// Input -- what user has selected
+// output - Full contructed URL 
+// Base Case - Defualt - Anytime base
+// yesterday
+// 3 days 
+// since my last visit 
+
+function returnURL (userInput) {
+
+    switch 
+
+
+    return `https://in.indeed.com/jobs?fromage=1`
+
+}
+
+// yesterday - 1 
+// 3 day = 3 
+// since last visit = "last"
