@@ -1,33 +1,30 @@
 [
   {
     "University_Name": "University of North Carolina at Charlotte",
-    "Specialization": "Computer Science",
-    "Graduation_Year": 2021,
+    "Specialization": "Compute Science",
+    "Graduation_Year": 2020,
     "Employer": "TCS",
-    "Job_Title": "Software Engineer",
+    "Job_Title": "Engineer     Software",
     "Job_Start_Date": "6/20/2020",
     "Career_Url": "https://ibegin.tcs.com/iBegin/jobs/search",
     "isValid":true
- 
-   
   },
+
   {
     "University_Name": "University of North Carolina at Charlotte",
     "Specialization": "Information Technology",
     "Graduation_Year": 2020,
     "Employer": "Toshiba Global Commerce Solutions",
-    "Job_Title": "Software Engineer",
+    "Job_Title": "Lead Engineer",
     "Job_Start_Date": "11/1/2020",
     "Career_Url": "",
-    "isValid":true
-
-
+    "isValid":false
   },
   {
     "University_Name": "Northeastern University",
     "isValid":false,
     "Specialization": "Informatics",
-    "Graduation_Year": 2020,
+    "Graduation_Year": 2022,
     "Employer": "Brandt Information Services",
     "Job_Title": "Financial Data Analyst",
     "Job_Start_Date": "1/1/2021",
@@ -609,6 +606,7 @@
     "Job_Start_Date": "5/1/2020",
     "Career_Url": "https://usa.visa.com/careers.html"
   },
+  
   {
     "University_Name": "Northeastern University",
     "Specialization": "Computer System Engineering - Internet of Things",

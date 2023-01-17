@@ -9,25 +9,48 @@ let  obj1 ={
     }
 }
 
-let  obj2 ={...obj1} 
 obj2.name="New and Improved Sachin" 
 obj2.education.masters.major="Computer Science" 
 
-console.log(obj1.name);
-console.log(obj1.education.masters.major);
+
+
+
+// let  obj2 = {...obj1} 
+let obj2= {
+    ...obj1,
+    education: {
+        ...obj1.education ,
+        masters : {
+            major:obj1.education.masters.major,
+            minor:obj1.education.masters.minor
+        }
+    }
+}
+
+
+
+// console.log(obj1.name);
+// console.log(obj1.education.masters.major);
 
 // shallow and deep 
 
 // ********************************************************************
 
-// function* gen() {
-
-//     for(i=0;i<10<i++){
-//         yield 
+function* gen() {
+    for(i=0;i<10;i++){
+        yield 
+        console.log(i);
+    }
+} 
+// function gen1() {
+//     for(let i=0;i<10;i++){
+//         // yield 
 //         console.log(i);
 //     }
-
 // } 
+
+
+
 // WATCHERS -
 // ()
 
@@ -62,16 +85,50 @@ console.log(obj1.education.masters.major);
 
 // *********************************************************************
 // Deep Copy using recursion , Write a function recopy to copy obj10
-// let  obj10 ={
-//     name:'Sachin',
-//     education :{
-//         masters:{
-//             major:"Telecom",
-//             minor:"Management",
+let  obj10 ={
+    name:'Sachin',
+    education :{
+        masters:{
+            major:"Telecom",
+            minor:"Management",
+            college :{
+                state:"MD"
+            }
             
-//         }
-//     }
-// }
+        },
+        bachelors:{
+            major:"Systems",
+            minor:"Mamne",
+            college :{
+                state:"MD"
+            }
+            
+        },
+    }
+}
+
+let result = {
+    name:'Sachin',
+    major:"Telecom",
+    minor:"Management",
+}
+
+let res= {}
+function recur (obj) {
+for (let key in obj) {
+// console.log(key, obj[key],'FOR KEY IN ')
+console.log(typeof obj[key]);
+if(typeof obj[key] === 'string') {
+    res[key]=obj[key]
+}
+else {
+    console.log(obj[key] ,'I am in else');
+    recur(obj[key])
+}
+}
+return res
+}
+console.log(recur(obj10))
 
 // *********************************************************************
 
@@ -88,6 +145,7 @@ console.log(obj1.education.masters.major);
 //         }
 //     }
 // }
+
 // function reCopy(obj) {
 //     let copy= {}
 

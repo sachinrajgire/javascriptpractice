@@ -1,15 +1,88 @@
-// Write a short program that prints each number from 1 to 100 on a new line. 
+'use strict'
 
-// For each multiple of 3, print "Fizz" instead of the number. 
+// String to Integer
+let a = "1"
 
-// For each multiple of 5, print "Buzz" instead of the number. 
+// console.log(parseInt(a));
+// console.log(Number(a));
+// console.log(+(a));
 
-// For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+// Int to String
+let b=2000
+console.log(b.toString());
+console.log(b+"");
+console.log(""+b);
+console.log(String(b));
+console.log(`${b}`);
 
-// for (i=0 ;i <= 100 ; i++) {
+let obj1 = {name:"sachin"}
+let arr1 = [{name:"sachin"}]
+console.log(typeof obj1);
+console.log(Array.isArray(arr1));
+console.log(Array.isArray(obj1));
 
-//   if( i%3)
+
+
+
+// let = [2,4,7,9,23]
+
+// const  a = () => {
+
 // }
+
+// // Explicit Return
+
+
+// // NODE -CommonJS
+
+// // syntaxical logical
+
+// // let studentName = "Prasa"
+// // let studentName2 = 0
+// // console.log(studentName);
+// // console.log(studentName2);
+// // console.log(studentName + studentName2 );
+// // // Write a short program that prints each number from 1 to 100 on a new line. 
+
+// // For each multiple of 3, print "Fizz" instead of the number. 
+// // For each multiple of 5, print "Buzz" instead of the number. 
+
+
+
+// // For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+
+// // for (i=0 ;i <= 100 ; i++) {
+
+// //   if( i%3)
+// // }
+
+// // 0 = duck
+// // 50 =half century
+// // 100 = century
+// // any else - runs
+
+// function onlyif (runs) {
+// if(runs === 0) {
+//     return 'duck'
+// }
+// if(runs === 50) {
+//     return 'fifty'
+// }
+// if(runs === 100) {
+//     return 'century'
+// }
+//     return 'runs'
+// }
+
+// function inverse (bool) {
+//     return !bool
+// }
+
+// let a = [true, false ]
+// const [first,second] = a
+// console.log(first ,second )
+// let c = [second, first]
+// console.log(c,'c');
 
 // Which one would you prefer ? 
 // if (condition){
@@ -23,6 +96,10 @@
 // if (condition){
 //     return "do something"
 // }
+
+
+
+
 // OR 
 // if (condition){
 //   return "do something"
@@ -46,7 +123,11 @@
 // Inverting Boolean
 
 
+
 // console.log(3 == "3");
+// coersion 
+
+
 
 // forced conversti
 // let sachin

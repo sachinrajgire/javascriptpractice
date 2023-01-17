@@ -344,3 +344,14 @@ module.exports ={
 
 // console.log(caps,'caps');
 
+// ES6 Features
+
+// let const
+// arrow functions 
+// Destructuring 
+// Template Literal ( `$`)
+// rest and spread 
+
+// Singleton --
+// Flux Pattern - Redux
+// 
