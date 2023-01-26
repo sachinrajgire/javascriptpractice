@@ -130,8 +130,8 @@
 //     {"state": "Rhode Island", "sqm": 1214},
 //     ];
 
-//     let output = [
-//         {"state": "Connecticut", "ppl": 5, "isNE": true,density:3444},
+//     let  = ppl[
+//         {"state": "Connecticut", "ppl": 5, "isNE": true},
 //         {"state": "Maine", "ppl": 5, "isNE": true},
 //         {"state": "Vermont", "ppl": 2, "isNE": true},
 //         {"state": "Massachusetts", "ppl": 2, "isNE": true},
@@ -145,7 +145,7 @@
 //         {"state": "Texas","ppl": 6, "isNE": false},
 //         ];
 
-
+[{state:"Vermont" ,density: }]
 
  //write which takes in minsqm and maxsqm --return all states which are between those ( inclusive of para)
 //only if isNE true 
