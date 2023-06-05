@@ -1,17 +1,16 @@
 [
-  {
-    "University_Name": "University of North Carolina at Charlotte",
-    "Specialization": "Compute Science",
-    "Graduation_Year": 2020,
-    "Employer": "TCS",
-    "Job_Title": "Engineer     Software",
-    "Job_Start_Date": "6/20/2020",
-    "Career_Url": "https://ibegin.tcs.com/iBegin/jobs/search",
-    "isValidOb":true,
-    "favs":["2344","3455","445666"],
-    "auth":true
-    
-  },
+    {
+      "University_Name": "University of North Carolina at Charlotte",
+      "Specialization": "Compute Science",
+      "Graduation_Year": 2020,
+      "Employer": "TCS",
+      "Job_Title": "Engineer     Software",
+      "Job_Start_Date": "6/20/2020",
+      "Career_Url": "https://ibegin.tcs.com/iBegin/jobs/search/url",
+      "isValid":true,
+      "favs":["2344","3455","445666"],
+      "auth":true
+    },
 
   {
     "University_Name": "University of North Carolina at Charlotte",
@@ -23,6 +22,7 @@
     "Career_Url": "",
     "isValid":false,
     "fname" :"sachin"
+ 
   },
 
   {
